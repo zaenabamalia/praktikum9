@@ -1,30 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Praktikum9;
 
-/**
- *
- * @author Zaenab
- */
-class Truk {
-
-    Truk(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getMuatanMaks() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    void tambahMuatan(double d) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    String getMuatan() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+public class Truk {
+    double muatan;
+    double muatanmaks;
+    
+    public Truk(double beratmaks){
+        this.muatanmaks= beratmaks;
     }
     
-}
+    public double getMuatan(){
+        return muatan;
+    }
+    
+    public double getMuatanMaks(){
+        
+        return muatanmaks;
+        
+    }
+    
+    public void tambahMuatan(double berat){
+         if((berat+muatan)<=muatanmaks){
+             muatan=muatan+berat;
+         }
+    }
+  }
